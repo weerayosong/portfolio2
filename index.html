@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weerayosong | yosong.dev</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                        },
+                        colors: {
+                            ong: {
+                                50: "#f0fdfa",
+                                100: "#ccfbf1",
+                                500: "#14b8a6",
+                                600: "#0d9488",
+                                900: "#134e4a",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                background-color: #f8fafc;
+            }
+            ::-webkit-scrollbar {
+                width: 6px;
+            }
+            ::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #cbd5e1;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #94a3b8;
+            }
+
+            .hidden-tab {
+                display: none !important;
+            }
+        </style>
+    </head>
+    <body
+        class="text-slate-800 antialiased selection:bg-ong-100 selection:text-ong-900"
+    >
+        <nav
+            class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200"
+        >
+            <div
+                class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+            >
+                <div class="font-bold text-xl tracking-tight text-slate-900">
+                    yosong<span class="text-ong-600">.</span>dev
+                </div>
+
+                <div class="flex gap-5 text-slate-500">
+                    <a
+                        href="https://github.com/weerayosong"
+                        target="_blank"
+                        class="hover:text-ong-600 transition-colors duration-200 text-lg"
+                        title="GitHub"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/weerayosong"
+                        target="_blank"
+                        class="hover:text-ong-600 transition-colors duration-200 text-lg"
+                        title="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a
+                        href="mailto:weerayosong@gmail.com"
+                        target="_blank"
+                        class="hover:text-ong-600 transition-colors duration-200 text-lg"
+                        title="Email"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main
+            class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-12 gap-8"
+        >
+            <aside class="lg:col-span-4 relative">
+                <div class="space-y-6 lg:sticky lg:top-[100px]">
+                    <div
+                        class="bg-white rounded-md p-8 shadow-sm border border-slate-100"
+                    >
+                        <div
+                            class="w-32 h-32 rounded-full bg-slate-100 border border-slate-200 mb-6 overflow-hidden flex items-center justify-center"
+                        >
+                            <img
+                                src="https://api.dicebear.com/7.x/notionists/svg?seed=Felix&backgroundColor=f8fafc&hair=variant05&glassesProbability=0&eyes=variant05&lips=variant04&beardProbability=0&beard&nose=variant03"
+                                alt="weerayosong pic"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        <h1 class="text-3xl font-bold text-slate-900 mb-1">
+                            Weerayos 'Ong' Thammachamrat
+                        </h1>
+                        <p
+                            class="text-ong-600 font-medium mb-4 flex items-center gap-2"
+                        >
+                            <i class="fa-solid fa-code"></i> Full Stack
+                            Developer
+                        </p>
+
+                        <p class="text-slate-600 leading-relaxed mb-8 text-sm">
+                            A Full Stack Developer with a deep commitment to
+                            continuous learning, currently focusing on
+                            foundation, system design and business logic to lay
+                            a solid foundation for building scalable
+                            applications in the future.
+                        </p>
+
+                        <a
+                            href="mailto:weerayosong@gmail.com"
+                            target="_blank"
+                            class="block w-full py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white text-center font-medium rounded-md transition-colors duration-200"
+                        >
+                            <i class="fa-solid fa-envelope mr-2"></i> Contact Me
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/weerayosong"
+                            target="_blank"
+                            class="block w-full mt-3 py-3 px-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 text-center font-medium rounded-md transition-colors duration-200"
+                        >
+                            <i class="fa-brands fa-linkedin-in mr-2"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-md p-6 shadow-sm border border-slate-100"
+                    >
+                        <h2
+                            class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2"
+                        >
+                            <i class="fa-solid fa-award text-slate-600"></i>
+                            Certifications
+                        </h2>
+                        <div
+                            id="container-certs"
+                            class="grid grid-cols-2 gap-3"
+                        ></div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="lg:col-span-8 space-y-8">
+                <section
+                    class="bg-white rounded-md p-8 shadow-sm border border-slate-100"
+                >
+                    <h2
+                        class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2"
+                    >
+                        <i class="fa-solid fa-code text-slate-600"></i>
+                        Technical Expertise
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3
+                                class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4"
+                            >
+                                Frontend
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-react mr-2 text-blue-500"
+                                    ></i
+                                    >React.js</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-html5 mr-2 text-orange-500"
+                                    ></i
+                                    >HTML</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-solid fa-wind mr-2 text-cyan-500"
+                                    ></i
+                                    >Tailwind CSS</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-js mr-2 text-yellow-500"
+                                    ></i
+                                    >JavaScript</span
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4"
+                            >
+                                Backend
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-node-js mr-2 text-green-600"
+                                    ></i
+                                    >Node.js</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><img
+                                        class="inline pb-0.5"
+                                        src="https://img.icons8.com/?size=18&id=PZQVBAxaueDJ&format=png&color=000000"
+                                        alt=""
+                                    /><i class="mr-1.5 text-gray-600"></i
+                                    >Express.js</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-solid fa-database mr-2 text-slate-500"
+                                    ></i
+                                    >PostgreSQL</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-solid fa-leaf mr-2 text-green-500"
+                                    ></i
+                                    >MongoDB</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <h3
+                                class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-4"
+                            >
+                                Tools & Infrastructure
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-git-alt mr-2 text-orange-500"
+                                    ></i
+                                    >Git</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-docker mr-2 text-blue-500"
+                                    ></i
+                                    >Docker</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-aws mr-2 text-slate-800"
+                                    ></i
+                                    >AWS</span
+                                >
+                                <span
+                                    class="px-4 py-2 bg-slate-50 border border-slate-100 text-slate-700 rounded-md text-sm font-medium"
+                                    ><i
+                                        class="fa-brands fa-figma mr-2 text-pink-500"
+                                    ></i
+                                    >Figma</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section
+                    class="bg-white rounded-md p-8 shadow-sm border border-slate-100"
+                >
+                    <div class="flex items-center gap-2 mb-2">
+                        <i
+                            class="fa-solid fa-briefcase text-slate-600 text-xl"
+                        ></i>
+                        <h2 class="text-xl font-bold text-slate-900">
+                            Portfolio Archive
+                        </h2>
+                    </div>
+
+                    <div class="flex border-b border-slate-200 mb-6">
+                        <button
+                            id="btn-featured"
+                            onclick="switchTab('featured')"
+                            class="px-6 py-3 border-b-2 font-semibold transition-colors border-ong-600 text-ong-600"
+                        >
+                            Featured Projects
+                        </button>
+                        <button
+                            id="btn-mini"
+                            onclick="switchTab('mini')"
+                            class="px-6 py-3 border-b-2 font-semibold transition-colors border-transparent text-slate-500 hover:text-slate-800"
+                        >
+                            Mini Projects
+                        </button>
+                    </div>
+
+                    <div
+                        id="container-featured"
+                        class="grid grid-cols-1 gap-6"
+                    ></div>
+                    <div
+                        id="container-mini"
+                        class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden-tab"
+                    ></div>
+                </section>
+            </div>
+        </main>
+
+        <footer
+            class="max-w-6xl mx-auto px-6 py-2 text-center text-slate-400 text-xs border-t border-slate-200 mt-4"
+        >
+            <p class="mt-1">© 2026 yosong.dev | All rights reserved.</p>
+        </footer>
+
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
